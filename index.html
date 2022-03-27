@@ -5,71 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Rate Converter</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-        *{
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body{
-            padding: 0;
-            margin: 0;
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .container{
-            /* position: absolute;
-            translate: (-50%,-50%);
-            top: 30%;
-            left: 40%;
-            */
-            width: 300px;
-            padding: 30px;
-            border:2px solid #000;
-            border-radius: 10px;
-        }
-        .heading, p.to{
-            text-align: center;
-            font-weight: 700;
-            padding: 0;
-            margin: 0;
-        }
-        .amount, .result{
-            width: 100%;
-            margin:20px 0;
-        }
-        .two-column-input{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        input[type="number"],input[type="text"]{
-            padding: 10px;
-        }
-        select{
-            padding: 5px 20px;
-        }
-        .author{
-            text-align: center;
-            font-size: 0.8em;
-            padding: 0;
-            margin: 0;
-        }
-        .author a{
-            text-decoration: none;
-            font-weight: 600;
-            color:rgba(27, 31, 255, 0.61);
-        }
-        input[type="text"]::placeholder {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -97,13 +33,10 @@
 
         </div>
 
-        <input type="text" class="result" placeholder="Result" readonly>
+        <input type="text" class="result" placeholder="Result" readonly id="result">
 
         <p class="author">Design with 🖤 by <span><a href="https://github.com/Nakamcode" target="_blank">Nakamcode</a></span></p>
     </section>
-
-    <script>
-       
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
